@@ -1,0 +1,199 @@
+@font-face {
+  font-family: "Bagnard";
+  src: url("Fonts/Bagnard.otf");
+}
+@font-face {
+  font-family: "Calluna";
+  src: url("Fonts/Calluna.otf");
+}
+@font-face {
+  font-family: "Neue-Unica-Medium";
+  src: url("Fonts/Neue-Unica-Medium.ttf");
+}
+@font-face {
+  font-family: "Neue-Unica-MediumItalic";
+  src: url("Fonts/Neue-Unica-MediumItalic.ttf");
+}
+@font-face {
+  font-family: "Neue-Unica-Regular";
+  src: url("Fonts/Neue-Unica-Regular.ttf");
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background-color: #FAF7F2;
+}
+/*Nav Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 4px;
+  margin: 14px 58px 14px 3px;
+  font-size: 1.2rem;
+  font-family: "Bagnard";
+  text-decoration: none;
+  transition: border-bottom 100ms ease-in-out;
+}
+
+li a:hover:not(.active) {
+  border-bottom: 5px solid black;
+}
+/*end of nav bar*/
+h1{
+	font-family: "Bagnard";
+	font-size: 5rem;
+	padding: 10px 0px;
+
+}
+h2{
+	font-family: "Bagnard";
+	font-size: 3rem;
+	padding: 10px 0px;
+
+}
+p{
+	font-family: "Neue-Unica-Regular";
+	font-size: 2rem;
+}
+/*HOME PAGE*/
+#home{
+	padding: 10%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-image: url(Images/home.svg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.home-text{
+	flex: 2 1 0;
+	margin: 50px 20px;
+}
+.home-img{
+	padding-top: 25%;
+	flex: 1 1 0;
+}
+/*END of home page*/
+
+/*Fund page*/
+#donate{
+	background-image: url(Images/donate.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#donate-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+
+}
+#donate-grid div div:not(.support-button){
+	background-color: rgba(255, 255, 255, .7);
+	border-radius: 10px;
+	margin: 15px;
+	padding: 15px;
+}
+#donate img{
+	border-radius: 10px;
+	margin: 10px 0px;
+	width: 100%;
+}
+#donate h1{
+	text-align: center;
+	margin-top: 10%;
+	font-size: 4rem;
+}
+#donate h3{
+	font-family: "Neue-Unica-Medium";
+	font-size: 1.5rem;
+}
+#donate p{
+	font-size: 1rem;
+}
+.nav-title{
+	position: fixed; 
+	left: 40px
+}
+.support-button{
+	display: table;
+  height: 50px;
+  width: 100%;
+  background-color: #3386C5;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.support-button:hover{
+	background-color: #1D71B0;
+}
+.donate-text{
+	color: white;
+	font-family: "Neue-Unica-Medium";
+	display: table-cell;
+	text-decoration: none;
+ 	vertical-align: middle;
+}
+
+/*END of fund page*/
+@media only screen and (max-width: 1000px) {
+	h1{
+		font-size: 3rem;
+		padding: 10px;
+	}
+	h2{
+		font-size: 1.5rem;
+		width: 60%;
+		padding: 10px;
+	}
+	p{
+		font-size: 1rem;
+	}	
+	nav ul{
+		padding: 10px;
+	}
+	nav ul li a{
+		padding: 0px 10px;
+		font-size: 1rem;
+		margin: 14px 8px 14px 3px;
+		left: 0;
+	}
+	#home{
+		flex-direction: column;
+	}
+	.home-img{
+		padding-top: 5%;
+	}
+	#donate-grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media only screen and (max-width: 600px) {
+	#donate-grid{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	nav ul li a{
+		padding: 0px 5px;
+		font-size: .7rem;
+	}
+	.nav-title{
+		position: relative; 
+		left: 10px
+	}
+}
