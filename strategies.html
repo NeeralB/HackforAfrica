@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .big{ width: 3em; height: 3em; }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Desertification → when land gets dry due to human processes or natural disasters that hurt the environment.
+    </h1>
+    
+    <br>
+    <h1>Choose a strategy</h1>
+
+    <form action= "{{ url_for('covid') }}" method = "POST">
+        <label for="STRAT1"><h2>Plant Trees</h2></label>
+        <input type="radio" name="name1" placeholder = "" class ="big" value="STRAT1">
+
+        <br>
+        <label for="STRAT2"><h2>Managing the quality of the soil.</h2></label>
+        <input type="radio" name="name2" placeholder = "" class ="big" value="STRAT2">
+
+        <br>
+        <label for="STRAT3"><h2>Better Water Management Strategy</h2></label>
+        <input type="radio" name="name3" placeholder = "" class ="big" value="STRAT3">
+      
+        <br>  
+      
+        <label for="STRAT4"><h2>Using the Stone Circle</h2></label>
+        <input type="radio" name="name4" placeholder = "" class ="big" value="STRAT4">
+        <br>
+        
+        <label for="STRAT5"><h2>Irrigation Systems</h2></label>
+        <input type="radio" name="name5" placeholder = "" class ="big" value="STRAT5">
+        <br>
+        <input type="submit" value="Submit Your Strategy">
+      </form>
+
+    
+    
+
+</body>
+</html>
