@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <nav>
+      <ul>
+        <li><a href="">Questions/Advice</a></li>
+        <li><a href="blog.html">Blog Posts/Share</a></li>
+        <li><a href="">Heatmaps</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="strategies.html">Ways to Help</a></li>
+        <li><a href="home.html" class = "nav-title">Title</a></li>
+      </ul>
+    </nav>
+    <div id = "blog">
+      <div class = "blog-text">
+        <h1>
+          Community Blog
+        </h1>
+        <h2>
+          Share and see updates on the geographical conditions of land!
+        </h2>
+      </div><br>
+            <button class="open-button" onclick="openForm()">Add blog post</button><br>
+
+      <div class="form-popup" id="myForm">
+      <form action="thanks.html" class="form-container">
+        <h2 class = "form-title">Add Your Blog Post</h2><br>
+        <label for="Name"><b>Name</b></label>
+        <input type="text" placeholder="Enter name" name="Name" required>
+        <label for="Title"><b>Title</b></label>
+        <input type="text" placeholder="Enter title" name="Title" required>
+        <label for="Description"><b>Description</b></label>
+        <input type="text" placeholder="Enter description" name="Description" required>
+        <label for="Location"><b>Location</b></label>
+        <input type="text" placeholder="Enter Location" name="Location" required>
+        <label for="">Thanks for sharing! </label><br><br>
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+    <script>
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = slider.value;
+
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+    </script>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+      <div id = "posts">
+        <div>
+          <div>
+            <img src="Images/blog1.png" alt="maize crops">
+            <h2 class = "blog-title">Just planted Maize crops</h2>
+            <h3 class = "blog-location">Zai-pit in Yatta, Kenya</h3>
+            <p class = "blog-time">Shared by Angelica on 8/15/2020 at 8:40 am EAT</p>
+            <p class = "blog-body">My family has planted some Maize crops this summer. They have just started to sprout and grow. One tip that helped us grow maize was soaking the seeds in water before planting. We can’t wait to harvest these plants!</p>
+          </div>
+        </div>
+          
+        <div>
+          <div>
+            <img src="Images/blog2.png" alt="community planting mangrove saplings and mangrove seeds">
+            <h2 class = "blog-title">My Community is helping plant mangrove saplings and mangrove seeds</h2>
+            <h3 class = "blog-location">Kenyan North Coast beach, Kenya</h3>
+            <p class = "blog-time">Shared by Jayden on 8/1/2020 at 5:28pm EAT</p>
+            <p class = "blog-body">We are planting mangrove saplings and seeds to help save the mangrove forest from disappearing. These plants grow well in tropical and subtropical areas, which is perfect because the Kenyan coast is tropical. I’m so proud of our team for coming together to do this. One of our members, Roy, even offered to take a break from his job as a fisherman to help us plant these seeds!f</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="Images/blog3.png" alt="person planting exotic trees">
+            <h2 class = "blog-title">Planting exotic trees and using better cooking pots</h2>
+            <h3 class = "blog-location">Broom Forest, Malawi</h3>
+            <p class = "blog-time">Shared by Azibo on 7/12/2020 at 1:49pm CAT</p>
+            <p class = "blog-body">We have been losing much of our forest here recently. To help with this, we have started planting exotic trees in our area. We are becoming more hopeful about our land and are excited for future steps. </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="Images/blog4.jpeg" alt="women sowing okra">
+            <h2 class = "blog-title">We are sowing okra</h2>
+            <h3 class = "blog-location">Zai Pits in Niger</h3>
+            <p class = "blog-time">Shared by Amy on 6/19/2020 at 3:28pm WAT</p>
+            <p class = "blog-body">The women in our community are hard at work sowing okra in our zai pits. We put the seeds in a open area that reaches sun, since okras need around 8 hours of sunlight a day. We are using a technique to put manure in our zai pits to collect water and feed our plants. So far, this has been working great.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>

@@ -18,6 +18,10 @@
   font-family: "Neue-Unica-Regular";
   src: url("Fonts/Neue-Unica-Regular.ttf");
 }
+@font-face {
+  font-family: "Neue-Unica-Italic";
+  src: url("Fonts/NeueHaasUnica-Italic.ttf");
+}
 
 *{
 	margin: 0px;
@@ -102,6 +106,7 @@ p{
 	background-image: url(Images/donate.svg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding: 10px;
 }
 #donate-grid{
 	display: grid;
@@ -112,6 +117,7 @@ p{
 	background-color: rgba(255, 255, 255, .7);
 	margin: 10px;
 	padding: 35px;
+	border: 2px solid black;
 }
 #donate img{
 	margin: 10px 0px;
@@ -293,15 +299,190 @@ input[type = submit]{
 	border: none;
 	height: 50px;
 	width: 200px;
-	background-color: #B87446;
+	background-color: #62A368;
 	color: white;
 	font-family: "Neue-Unica-Medium";
 	font-size: 1rem;
 }
 input[type = submit]:hover {
-	background-color: #743F1C;
+	background-color: #4B8851;
 }
 /*End of strategies*/
+
+/*BLOG*/
+#blog{
+	margin: 0% 3%;
+}
+#posts{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+#posts div div{
+	background-color: rgba(255, 255, 255, .7);
+	border: 2px solid black;
+	margin: 10px;
+	padding: 35px;
+}
+#posts img{
+	max-width: 300px;
+	margin: 0px;
+	padding: 0px;
+}
+#posts div{
+	
+}
+#blog h2 {
+	margin: 5px 0px 0px 0px;
+	padding: 0px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+#blog .blog-title{
+	text-align: left;
+}
+.blog-location{
+	font-family: "Neue-Unica-Regular";
+	font-size: 1rem;
+}
+.blog-time{
+	font-family: "Neue-Unica-Italic";
+	font-size: .9rem;
+	margin-top: 4px;
+}
+.blog-body{
+	font-size: 1rem;
+}
+.form-popup {
+	display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border: 3px solid black;
+  z-index: 11;
+}
+.apply{
+  width: 600px;
+  top: 20%;
+  left: 29%;
+  border: none;
+}
+label{
+	font-size: 1.2rem;
+}
+.form-title{
+	font-size: 2rem;
+	font-family: "Bagnard";
+	color: black; 
+	padding-top: 10px; 
+	margin: 0px;
+}
+
+.open-button{
+	font-family: "Neue-Unica-Medium", sans-serif;
+	font-size: 1rem;
+	border: none;
+	border-radius: 0px;
+	background-color: #FFEF63;
+	padding: 20px;
+	display: block;
+	margin: 0 auto;
+}
+.form-container {
+  max-width: 700px;
+  padding: 10px;
+  background-color: white;
+  font-family: "Neue-Unica-Medium", sans-serif;
+}
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border-radius: 20px;
+  background: green;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border-radius: 20px;
+  background: green;
+  cursor: pointer;
+}
+.form-popup button{
+	font-family: "Gilmer-medium", sans-serif;
+	font-size: 1rem;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  font-family: "Gilmer-medium", sans-serif;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: #F15742;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*End of blog*/
+/*Thanks(for when user submits blog)*/
+#thanks div{
+	margin: 0px 10%;
+	background-color: #77B17D;
+	text-align: center;
+}
+#thanks h1{
+	font-size: 3rem;
+}
+#thanks h2{
+	margin: 0;
+	font-size: 2rem;
+}
+/*END of thanks*/
 
 @media only screen and (max-width: 1000px) {
 	h1{
@@ -331,18 +512,19 @@ input[type = submit]:hover {
 	.home-img{
 		padding-top: 5%;
 	}
-	#donate-grid{
+	#donate-grid, #posts{
 		grid-template-columns: repeat(2, 1fr);
 	}
 	#leftleaf, #rightleaf{
 		visibility: hidden;
 	}
-	#strategies section{
+	#strat1, #strat2, #strat3, #strat4, #strat5 {
 		width: 100%;
+		height: 100%;
 	}
 }
 @media only screen and (max-width: 600px) {
-	#donate-grid{
+	#donate-grid, #posts{
 		grid-template-columns: repeat(1, 1fr);
 	}
 	nav ul li a{
