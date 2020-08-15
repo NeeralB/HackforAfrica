@@ -84,6 +84,10 @@ p{
 	background-repeat: no-repeat;
 }
 .home-text{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
 	flex: 2 1 0;
 	margin: 50px 20px;
 }
@@ -154,6 +158,22 @@ p{
 /*Strategies*/
 #strategies{
 	margin: 5%;
+}
+#strategies section{
+	display: flex;
+	flex-direction: row;
+}
+#strategies section img{
+	margin-top: 100%;
+	display: inline-block;
+}
+#strategies #leftleaf{
+	position: relative;
+	left: 90%;
+}
+#strategies #rightleaf{
+	position: relative;
+	right: 90%;
 }
 h1{
 	margin-top: 14%;
@@ -313,6 +333,12 @@ input[type = submit]:hover {
 	}
 	#donate-grid{
 		grid-template-columns: repeat(2, 1fr);
+	}
+	#leftleaf, #rightleaf{
+		visibility: hidden;
+	}
+	#strategies section{
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 600px) {
