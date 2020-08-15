@@ -8,40 +8,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Desertification → when land gets dry due to human processes or natural disasters that hurt the environment.
-    </h1>
-    
-    <br>
-    <h1>Choose a strategy</h1>
+    <nav>
+      <ul>
+        <li><a href="">Questions/Advice</a></li>
+        <li><a href="">Blog Posts/Share</a></li>
+        <li><a href="">Heatmaps</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="strategies.html">Ways to Help</a></li>
+        <li><a href="home.html" class = "nav-title">Title</a></li>
+      </ul>
+    </nav>
+    <div id = "strategies">
+        <h1>Ways to Help</h1>
+    <h3><span class = "highlight">Desertification</span> → when land gets dry due to human processes or natural disasters that hurt the environment.
+    </h3>
+    <div id = "strategyform">
+        <h2 class = "form-title" style = "text-align: center; font-size: 2rem">Choose a Strategy</h2>
 
     <form action= "{{ url_for('covid') }}" method = "POST">
-        <label for="STRAT1"><h2>Plant Trees</h2></label>
-        <input type="radio" name="name1" placeholder = "" class ="big" value="STRAT1">
+        <div id = "strat1"><br>
+            <label for="STRAT1"><h2>Plant Trees</h2></label>
+        <input type="radio"  id="radioStrat1" name="name1" placeholder = "" class ="big" value="STRAT1">
+        <label class ="selectlabel" for="radioStrat1">Select</label>
+        </div>
+        <br>
+        <div id = "strat2"><br>
+            <label for="STRAT2"><h2>Managing the quality of the soil.</h2></label>
+            <input type="radio" id="radioStrat2" name="name2" placeholder = "" class ="big" value="STRAT2">
+            <label class ="selectlabel" for="radioStrat2">Select</label>
+        </div>
 
         <br>
-        <label for="STRAT2"><h2>Managing the quality of the soil.</h2></label>
-        <input type="radio" name="name2" placeholder = "" class ="big" value="STRAT2">
+        <div id = "strat3"><br>
+            <label for="STRAT3"><h2>Better Water Management Strategy</h2></label>
+            <input type="radio" id="radioStrat3" name="name3" placeholder = "" class ="big" value="STRAT3">
+            <label class ="selectlabel" for="radioStrat3">Select</label>
+        </div>
 
-        <br>
-        <label for="STRAT3"><h2>Better Water Management Strategy</h2></label>
-        <input type="radio" name="name3" placeholder = "" class ="big" value="STRAT3">
-      
         <br>  
-      
-        <label for="STRAT4"><h2>Using the Stone Circle</h2></label>
-        <input type="radio" name="name4" placeholder = "" class ="big" value="STRAT4">
+        <div id = "strat4"><br>
+            <label for="STRAT4"><h2>Using the Stone Circle</h2></label>
+            <input type="radio"  id="radioStrat4" name="name4" placeholder = "" class ="big" value="STRAT4">
+            <label class ="selectlabel" for="radioStrat4">Select</label>
+        </div>
+
         <br>
-        
-        <label for="STRAT5"><h2>Irrigation Systems</h2></label>
-        <input type="radio" name="name5" placeholder = "" class ="big" value="STRAT5">
+        <div id = "strat5"><br>
+            <label for="STRAT5"><h2>Irrigation Systems</h2></label>
+            <input type="radio"  id="radioStrat5" name="name5" placeholder = "" class ="big" value="STRAT5">
+            <label class ="selectlabel" for="radioStrat5">Select</label>
+        </div>
         <br>
         <input type="submit" value="Submit Your Strategy">
       </form>
-
-    
-    
-
+    </div>
+    </div>
 </body>
 </html>
