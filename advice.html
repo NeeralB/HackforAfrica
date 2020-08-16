@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+  
+<html> 
+<head> 
+    <title> COVID FORM </title> 
+    <style>
+        body {
+            background-color: lightblue;
+            
+            background-image: url("");
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: 100% 100%;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head> 
+<body>
+
+<br>
+
+
+
+<form action = "{{ url_for('ml') }}" method="POST">
+    <br>
+    <label for="rock">How many trees have been planted in your land?</label>
+    <input type="input" name="name1" placeholder = "Please enter your answer here"> 
+    <br>
+
+    <br>
+    <label for="rock">How many animals roam your land? </label>
+    <input type="input" name="name2" placeholder = "Please enter your answer here"> 
+    <br>
+    
+    <br>
+    <label for="rock">How many hectares is your land?</label>
+    <input type="input" name="name3" placeholder = "Please enter your answer here"> 
+    <br>
+
+    <br>
+    <label for="rock">What is the average temperature in your city</label>
+    <input type="input" name="name4" placeholder = "Please enter your answer here"> 
+    <br>
+
+    <br>
+    <label for="rock">How long have you been planting your garden?</label>
+    <input type="input" name="name5" placeholder = "Please enter your answer here"> 
+    <br>
+
+    <button>Submit</button>
+</form>
+
+
+
+
+        
+    
+</body>
+</html>
+
