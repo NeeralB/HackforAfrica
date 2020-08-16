@@ -61,12 +61,25 @@ li a:hover:not(.active) {
   border-bottom: 5px solid black;
 }
 /*end of nav bar*/
+
 h1{
 	font-family: "Bagnard";
 	font-size: 5rem;
 	padding: 10px 0px;
 
 }
+.folium-map{
+	border: 2px solid black;
+	padding: 0px 20px;
+	float: left;
+	max-width: 600px;
+	max-height: 500px;
+
+}
+#heatmap-title{
+	font-family: "Bagnard" !important;
+}
+
 h2{
 	font-family: "Bagnard";
 	font-size: 3rem;
