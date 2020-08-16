@@ -461,7 +461,7 @@ label{
 .form-container input[type=text]:focus, .form-container input[type=password]:focus {
   background-color: #ddd;
   outline: none;
-  font-family: "Gilmer-medium", sans-serif;
+  font-family: "Neue-Unica-Medium", sans-serif;
 }
 
 .form-container .btn {
@@ -483,6 +483,27 @@ label{
   opacity: 1;
 }
 /*End of blog*/
+
+/*Advice*/
+#advice-form{
+	display: block;
+	margin: 0 auto;
+	font-family: "Neue-Unica-Medium";
+}
+#advice-submit-button{
+	width: 110px;
+	height: 30px;
+	margin: 10px;
+	border: none;
+	color: white;
+	font-family: "Neue-Unica-Medium";
+	font-size: 1rem;
+	background-color: #C89F02;
+}
+#advice-submit-button:hover{
+	background-color: #AA8700;
+}
+/*END Of advice*/
 /*Thanks(for when user submits blog)*/
 #thanks div{
 	margin: 0px 10%;

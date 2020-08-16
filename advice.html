@@ -3,60 +3,52 @@
 <html> 
 <head> 
     <title> COVID FORM </title> 
-    <style>
-        body {
-            background-color: lightblue;
-            
-            background-image: url("");
-            background-repeat: no-repeat;
-            background-attachment: fixed; 
-            background-size: 100% 100%;
-        }
-        h1 {
-            color: white;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head> 
+
 <body>
+    <nav>
+          <ul>
+            <li><a href="advice.html">Questions/Advice</a></li>
+            <li><a href="blog.html">Blog Posts/Share</a></li>
+            <li><a href="desertificationml.html">Climate Map</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="strategies.html">Ways to Help</a></li>
+            <li><a href="home.html" class = "nav-title">Title</a></li>
+          </ul>
+        </nav>
+        <h1>Advice</h1>
+        <h2 style = "color: #56925C; font-size: 1.5rem; text-align: center; display: block; margin: auto">Answer these questions to learn whether your land is at risk of desertification.</h2>
+        <div style = "text-align: center; display: block" id = "advice-form">
+            <form action = "{{ url_for('ml') }}" method="POST">
+        <br>
+        <label for="rock">How many trees have been planted in your land?</label>
+        <input type="input" name="name1" placeholder = "Please enter your answer here"> 
+        <br>
 
-<br>
-
-
-
-<form action = "{{ url_for('ml') }}" method="POST">
-    <br>
-    <label for="rock">How many trees have been planted in your land?</label>
-    <input type="input" name="name1" placeholder = "Please enter your answer here"> 
-    <br>
-
-    <br>
-    <label for="rock">How many animals roam your land? </label>
-    <input type="input" name="name2" placeholder = "Please enter your answer here"> 
-    <br>
-    
-    <br>
-    <label for="rock">How many hectares is your land?</label>
-    <input type="input" name="name3" placeholder = "Please enter your answer here"> 
-    <br>
-
-    <br>
-    <label for="rock">What is the average temperature in your city</label>
-    <input type="input" name="name4" placeholder = "Please enter your answer here"> 
-    <br>
-
-    <br>
-    <label for="rock">How long have you been planting your garden?</label>
-    <input type="input" name="name5" placeholder = "Please enter your answer here"> 
-    <br>
-
-    <button>Submit</button>
-</form>
-
-
-
-
+        <br>
+        <label for="rock">How many animals roam your land? </label>
+        <input type="input" name="name2" placeholder = "Please enter your answer here"> 
+        <br>
         
-    
-</body>
+        <br>
+        <label for="rock">How many hectares is your land?</label>
+        <input type="input" name="name3" placeholder = "Please enter your answer here"> 
+        <br>
+
+        <br>
+        <label for="rock">What is the average temperature in your city</label>
+        <input type="input" name="name4" placeholder = "Please enter your answer here"> 
+        <br>
+
+        <br>
+        <label for="rock">How long have you been planting your garden?</label>
+        <input type="input" name="name5" placeholder = "Please enter your answer here"> 
+        <br>
+
+        <button id = "advice-submit-button">Submit</button>
+    </form>
+        </div>
+    </body>
 </html>
 
